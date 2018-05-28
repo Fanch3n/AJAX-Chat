@@ -362,16 +362,6 @@
 						<dd><input type="checkbox" id="persistFontColorSetting" onclick="ajaxChat.setPersistFontColor(this.checked);"/></dd>
 					</dl>
 					<dl>
-						<dt><label for="audioBackendSetting">[LANG]settingsAudioSupport[/LANG]</label></dt>
-						<dd>
-							<select id="audioBackendSetting" onchange="ajaxChat.setAudioBackend(this.options[this.selectedIndex].value);">
-								<option value="-1">Auto</option>
-								<option value="1">Flash</option>
-								<option value="0">HTML5</option>
-							</select>
-						</dd>
-					</dl>
-					<dl>
 						<dt><label for="audioVolumeSetting">[LANG]settingsAudioVolume[/LANG]</label></dt>
 						<dd>
 							<select class="left" id="audioVolumeSetting" onchange="ajaxChat.setAudioVolume(this.options[this.selectedIndex].value);">
@@ -470,6 +460,5 @@
 		//-->
 		<div id="copyright"><a href="https://blueimp.net/ajax/">AJAX Chat</a> &copy; <a href="https://blueimp.net">blueimp.net</a></div>
 	</div>
-	<div id="flashInterfaceContainer"></div>
 </body>
 </html>
