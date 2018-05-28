@@ -10,19 +10,22 @@
 // Ajax Chat backend logic:
 class AJAXChat {
 
-	var $db;
-	var $_config;
-	var $_requestVars;
-	var $_infoMessages;
-	var $_channels;
-	var $_allChannels;
-	var $_view;
-	var $_lang;
-	var $_invitations;
-	var $_customVars;
-	var $_sessionNew;
-	var $_onlineUsersData;
-	var $_bannedUsersData;
+	public
+		$db;
+
+	protected
+		$_config,
+		$_requestVars,
+		$_infoMessages,
+		$_channels,
+		$_allChannels,
+		$_view,
+		$_lang,
+		$_invitations,
+		$_customVars,
+		$_sessionNew,
+		$_onlineUsersData,
+		$_bannedUsersData;
 	
 	function __construct() {
 		$this->initialize();
@@ -79,21 +82,10 @@ class AJAXChat {
 		$this->_requestVars['getInfos']		= isset($_REQUEST['getInfos'])		? $_REQUEST['getInfos']			: null;
 		$this->_requestVars['lang']			= isset($_REQUEST['lang'])			? $_REQUEST['lang']				: null;
 		$this->_requestVars['delete']		= isset($_REQUEST['delete'])		? (int)$_REQUEST['delete']		: null;
+		$this->_requestVars['token']		= isset($_REQUEST['token'])			? $_REQUEST['token']			: null;
 		
 		// Initialize custom request variables:
 		$this->initCustomRequestVars();
-		
-		// Remove slashes which have been added to user input strings if magic_quotes_gpc is On:
-		if(get_magic_quotes_gpc()) {
-			// It is safe to remove the slashes as we escape user data ourself
-			array_walk(
-				$this->_requestVars,
-				create_function(
-					'&$value, $key',
-					'if(is_string($value)) $value = stripslashes($value);'
-				)
-			);
-		}
 	}
 	
 	function initDataBaseConnection() {
@@ -129,16 +121,18 @@ class AJAXChat {
 		$this->startSession();
 
 		if($this->isLoggedIn()) {
-			// Logout if we receive a logout request, the chat has been closed or the userID could not be revalidated:
-			if($this->getRequestVar('logout') || !$this->isChatOpen() || !$this->revalidateUserID()) {
-				$this->logout();
-				return;
-			}
 			// Logout if the Session IP is not the same when logged in and ipCheck is enabled:
 			if($this->getConfig('ipCheck') && ($this->getSessionIP() === null || $this->getSessionIP() != $_SERVER['REMOTE_ADDR'])) {
 				$this->logout('IP');
 				return;
 			}
+
+			// Logout if we receive a logout request, the chat has been closed or the userID could not be revalidated:
+			if($this->getRequestVar('logout') && $this->getRequestVar('token') == session_id() || !$this->isChatOpen() || !$this->revalidateUserID()) {
+				$this->logout();
+				return;
+			}
+			
 		} else if(
 			// Login if auto-login enabled or a login, userName or shoutbox parameter is given:
 			$this->getConfig('forceAutoLogin') ||
@@ -314,7 +308,7 @@ class AJAXChat {
 		$template = new AJAXChatTemplate($this, $this->getTemplateFileName(), $httpHeader->getContentType());
 
 		// Send HTTP header:
-		$httpHeader->send();		
+		$httpHeader->send();
 
 		// Send parsed template content:
 		echo $template->getParsedContent();
