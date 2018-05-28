@@ -420,11 +420,6 @@ var ajaxChat = {
 		this.makeRequest(requestUrl,'GET',null);
 	},
 
-	setAudioBackend: function(audioBackend) {
-		this.setSetting('audioBackend', audioBackend);
-		this.initializeHTML5Sounds();
-	},
-
 	loadXML: function(str) {
 		if(!arguments.callee.parser) {
 			try {
