@@ -208,4 +208,33 @@ class CustomAJAXChat extends AJAXChat {
 		return;
 	}
 
+	function parseCustomCommands($text, $textParts) {
+		switch($textParts[0]) {
+			// Away from keyboard message:
+			case '/afk':
+				// Set the userName:
+				$this->setUserName('<AFK>_'.$this->getUserName());
+				// Update the online user table:
+				$this->updateOnlineList();
+				// Add info message to update the client-side stored userName:
+				$this->addInfoMessage($this->getUserName(), 'userName');
+				// Store AFK status as session variable:
+				$this->setSessionVar('AwayFromKeyboard', true);
+				return true;
+			default:
+				return false;
+		}
+	}
+	
+	function onNewMessage($text) {
+		// Reset AFK status on first inserted message:
+		if($this->getSessionVar('AwayFromKeyboard')) {
+			$this->setUserName($this->subString($this->getUserName(), 6));
+			$this->updateOnlineList();
+			$this->addInfoMessage($this->getUserName(), 'userName');
+			$this->setSessionVar('AwayFromKeyboard', false);
+		}
+		return true;
+	}
+	
 }
