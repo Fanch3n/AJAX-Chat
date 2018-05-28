@@ -14,9 +14,6 @@
 
 	ajaxChat.startChatUpdate = function() {
 		var infos = 'userID,userName,userRole';
-		if(this.socketServerEnabled) {
-			infos += ',socketRegistrationID';
-		}
 		this.updateChat('&getInfos=' + this.encodeText(infos));
 	}
 
@@ -96,33 +93,7 @@
 	ajaxChat.setChatUpdateTimer = function() {
 		clearTimeout(this.timer);
 		var timeout;
-		if(this.socketIsConnected && this.logsLastID && this.lastID == this.logsLastID) {
-			timeout = this.socketTimerRate;
-		} else {
-			timeout = this.timerRate;
-			if(this.socketServerEnabled && !this.socketReconnectTimer) {
-				// If the socket connection fails try to reconnect once in a minute:
-				this.socketReconnectTimer = setTimeout('ajaxChat.socketConnect();', 60000);
-			}
-		}
+		timeout = this.timerRate;
 		this.timer = setTimeout('ajaxChat.updateChat(null);', timeout);
-	}
-	
-	ajaxChat.socketUpdate = function(data) {
-		if(this.logsMonitorMode) {
-			var xmlDoc = this.loadXML(data);
-			if(xmlDoc) {
-				var selectedChannelID = parseInt(this.dom['channelSelection'].value);
-				var channelID = parseInt(xmlDoc.firstChild.getAttribute('channelID'));
-				if(selectedChannelID == -3 || channelID == selectedChannelID ||
-					selectedChannelID == -2 && channelID >= this.privateMessageDiff ||
-					selectedChannelID == -1
-						&& channelID >= this.privateChannelDiff
-						&& channelID < this.privateMessageDiff
-					) {
-					this.handleChatMessages(xmlDoc.getElementsByTagName('message'));
-				}
-			}
-		}
 	}
 	

@@ -46,7 +46,7 @@ $config['langAvailable'] = array(
 	'ar','bg','ca','cy','cz','da','de','el','en','es','et','fa','fi','fr','gl','he','hr','hu','in','it','ja','ka','kr','mk','nl','nl-be','no','pl','pt-br','pt-pt','ro','ru','sk','sl','sr','sv','th','tr','uk','zh','zh-tw'
 );
 // Default language:
-$config['langDefault'] = 'en';
+$config['langDefault'] = 'de';
 // Language names (each languge code in available languages must have a display name assigned here):
 $config['langNames'] = array(
 	'ar'=>'عربي', 'bg'=>'Български', 'ca'=>'Català', 'cy'=>'Cymraeg', 'cz'=>'Česky', 'da'=>'Dansk', 'de'=>'Deutsch', 'el'=>'Ελληνικα', 'en'=>'English',
@@ -59,7 +59,7 @@ $config['langNames'] = array(
 // Available styles:
 $config['styleAvailable'] = array('beige','black','grey','Oxygen','Lithium','Sulfur','Cobalt','Mercury','Uranium','Pine','Plum','prosilver','Core','MyBB','vBulletin','XenForo');
 // Default style:
-$config['styleDefault'] = 'prosilver';
+$config['styleDefault'] = 'black';
 
 // The encoding used for the XHTML content:
 $config['contentEncoding'] = 'UTF-8';
@@ -134,19 +134,19 @@ $config['guestUserSuffix'] = ')';
 $config['minGuestUserID'] = 400000000;
 
 // Allow/Disallow users to change their userName (Nickname):
-$config['allowNickChange'] = true;
+$config['allowNickChange'] = false;
 // Changed userNames should be distinguished by either a prefix or a suffix or both (no whitespace):
 $config['changedNickPrefix'] = '(';
 // Changed userNames should be distinguished by either a prefix or a suffix or both (no whitespace):
 $config['changedNickSuffix'] = ')';
 
 // Allow/Disallow registered users to delete their own messages:
-$config['allowUserMessageDelete'] = true;
+$config['allowUserMessageDelete'] = false;
 
 // The userID used for ChatBot messages:
 $config['chatBotID'] = 2147483647;
 // The userName used for ChatBot messages
-$config['chatBotName'] = 'ChatBot';
+$config['chatBotName'] = 'Igor';
 
 // Minutes until a user is declared inactive (last status update) - the minimum is 2 minutes:
 $config['inactiveTimeout'] = 2;
@@ -165,7 +165,7 @@ $config['requestMessagesLimit'] = 10;
 // Max users in chat (does not affect moderators or admins):
 $config['maxUsersLoggedIn'] = 100;
 // Max userName length:
-$config['userNameMaxLength'] = 16;
+$config['userNameMaxLength'] = 26;
 // Max messageText length:
 $config['messageTextMaxLength'] = 1040;
 // Defines the max number of messages a user may send per minute:
@@ -186,12 +186,12 @@ $config['logsRequestMessagesTimeDiff'] = 1;
 $config['logsRequestMessagesLimit'] = 10;
 
 // Defines the earliest year used for the logs selection:
-$config['logsFirstYear'] = 2007;
+$config['logsFirstYear'] = 2018;
 
 // Defines if old messages are purged from the database:
-$config['logsPurgeLogs'] = false;
+$config['logsPurgeLogs'] = true;
 // Max time difference in days for old messages before they are purged from the database:
-$config['logsPurgeTimeDiff'] = 365;
+$config['logsPurgeTimeDiff'] = 7;
 
 // Defines if registered users (including moderators) have access to the logs (admins are always granted access):
 $config['logsUserAccess'] = false;

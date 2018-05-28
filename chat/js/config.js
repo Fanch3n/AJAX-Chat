@@ -11,7 +11,7 @@ var ajaxChatConfig = {
 	loginChannelName: null,
 
 	// The time in ms between update calls to retrieve new chat messages:
-	timerRate: 2000,
+	timerRate: 1000,
 
 	// The URL to retrieve the XML chat messages (must at least contain one parameter):
 	ajaxURL: './?ajax=true',
@@ -42,8 +42,6 @@ var ajaxChatConfig = {
 		emoticonsContainer: 'emoticonsContainer',
 		// The ID of the color codes container:
 		colorCodesContainer: 'colorCodesContainer',
-		// The ID of the flash interface container:
-		flashInterfaceContainer: 'flashInterfaceContainer',
         // The ID of the status icon:
         statusIcon: 'statusIconContainer'
 	},
@@ -79,7 +77,7 @@ var ajaxChatConfig = {
 		dateFormat: '(%H:%i:%s)',
 
 		// Defines if font colors persist without the need to assign them to each message:
-		persistFontColor: false,
+		persistFontColor: true,
 		// The default font color, uses the page default font color if set to null:
 		fontColor: null,
 
@@ -229,11 +227,11 @@ var ajaxChatConfig = {
 	// If enabled, cookies must be sent over secure (SSL/TLS encrypted) connections:
 	cookieSecure: null,
 	// The name of the chat bot:
-	chatBotName: 'ChatBot',
+	chatBotName: 'Igor',
 	// The userID of the chat bot:
 	chatBotID: 2147483647,
 	// Allow/Disallow registered users to delete their own messages:
-	allowUserMessageDelete: true,
+	allowUserMessageDelete: false,
 	// Minutes until a user is declared inactive (last status update) - the minimum is 2 minutes:
 	inactiveTimeout: 2,
 	// UserID plus this value are private channels (this is also the max userID and max channelID):
@@ -244,14 +242,6 @@ var ajaxChatConfig = {
 	showChannelMessages: true,
 	// Max messageText length:
 	messageTextMaxLength: 1040,
-	// Defines if the socket server is enabled:
-	socketServerEnabled: false,
-	// Defines the hostname of the socket server used to connect from client side:
-	socketServerHost: 'localhost',
-	// Defines the port of the socket server:
-	socketServerPort: 1935,
-	// This ID can be used to distinguish between different chat installations using the same socket server:
-	socketServerChatID: 0,
 
 	// Debug allows console logging or alerts on caught errors - false/0 = no debug, true/1/2 = console log, 2 = alerts
 	debug: false
