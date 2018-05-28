@@ -83,9 +83,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: '錯誤：已達到一分鐘所能發送的最大訊息數量……',
 	errorConnectionTimeout: '錯誤：連線逾時，請再連一次……',
 	errorConnectionStatus: '錯誤：連線狀態： %s ',
-	errorSoundIO: '錯誤：無法讀取音效檔 (Flash IO Error).',
-	errorSocketIO: '錯誤：無法連線到伺服器的socket (Flash IO Error).',
-	errorSocketSecurity: '錯誤：無法連線到伺服器的socket (Flash Security Error).',
 	errorDOMSyntax: '錯誤：無效的 DOM 語法 (DOM ID: %s).'
 	
 }

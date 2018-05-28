@@ -85,9 +85,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: 'Ошибка: Вы превысили ограничение на количество сообщений, отправленных за минуту.',
 	errorConnectionTimeout: 'Ошибка: Соединение не установлено. Пожалуйста, попробуйте еще раз.',
 	errorConnectionStatus: 'Ошибка: Статус соединения: %s',
-	errorSoundIO: 'Ошибка: Не получается загрузить звуковой файл (Flash IO Error).',
-	errorSocketIO: 'Ошибка: Не удалось открыть сокет (Flash IO Error).',
-	errorSocketSecurity: 'Ошибка: Не удалость открыть сокет (Flash Security Error).',
 	errorDOMSyntax: 'Ошибка: Некорректный синтаксис DOM (DOM ID: %s).'
 	
 }

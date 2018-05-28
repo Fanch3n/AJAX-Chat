@@ -84,9 +84,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: 'Error: Ha sobrepasado el número máximo de mensajes por minuto.',
 	errorConnectionTimeout: 'Error: Connection timeout. Please try again.',
 	errorConnectionStatus: 'Error: Estado de la conexión: %s',
-	errorSoundIO: 'Error: No se ha podido cargar el fichero de sonido (Error IO Flash).',
-	errorSocketIO: 'Error: No se ha podido conectar al servidor socket (Error IO Flash).',
-	errorSocketSecurity: 'Error: No se ha podido conectar al servidor socket (Error Seguridad Flash).',
 	errorDOMSyntax: 'Error: Sintaxis DOM No Válida (DOM ID: %s).'
 	
 }

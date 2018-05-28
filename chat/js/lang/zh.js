@@ -84,9 +84,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: '错误：超出了每分钟最大讯息数。',
 	errorConnectionTimeout: '错误：连接超时，请重试。',
 	errorConnectionStatus: '错误：连接状态：%s',
-	errorSoundIO: '错误：加载声音文件失败（Flash IO 错误）。',
-	errorSocketIO: '错误：连接 Socket 服务器失败（Flash IO 错误）。',
-	errorSocketSecurity: '错误：连接 Socket 服务器失败（Flash 安全错误）。',
 	errorDOMSyntax: '错误：错误的 DOM 语法（DOM ID：%s）。'
 	
 }

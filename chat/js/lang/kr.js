@@ -83,9 +83,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: '오류: 1분동안 연속해서 입력할 수 있는 메시지 수를 초과하였습니다.',
 	errorConnectionTimeout: '오류: 접속시간을 초과하였습니다.',
 	errorConnectionStatus: '오류: 접속 상태: %s',
-	errorSoundIO: '오류: 입출력 실패로 소리파일을 불러오는데 실패하였습니다.',
-	errorSocketIO: '오류: 입출력 실패로 서버에 접속하는데 실패하였습니다.',
-	errorSocketSecurity: '오류: 보안문제로 서버에 접속하는데 실패하였습니다.',
 	errorDOMSyntax: '오류: DOM 문법이 잘못되었습니다. (DOM ID: %s).'
 	
 }

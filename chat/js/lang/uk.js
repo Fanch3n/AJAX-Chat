@@ -84,9 +84,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: 'Помилка: Ви досягли максимальної кількості повідомлень за хвилину.',
 	errorConnectionTimeout: 'Помилка: час очікування минув. Будь-ласка, спробуйте знову.',
 	errorConnectionStatus: 'Помилка: стан з\'єднання: %s',
-	errorSoundIO: 'Помилка: Неможливо відкрити звуковий файл (Flash IO Error).',
-	errorSocketIO: 'Помилка: З\'єднання з сервером невдалося (Flash IO Error).',
-	errorSocketSecurity: 'Помилка: З\'єднання з сервером невдалося (Flash Security Error).',
 	errorDOMSyntax: 'Помилка: Invalid DOM Syntax (DOM ID: %s).'
 	
 }

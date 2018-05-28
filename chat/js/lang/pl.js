@@ -84,9 +84,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: 'Błąd: Przekroczyłeś maksymalną liczbę wiadomości wysyłanych w ciągu minuty. Poczekaj chwilę...',
 	errorConnectionTimeout: 'Błąd: Czas połączenia przekroczony. Spróbuj ponownie.',
 	errorConnectionStatus: 'Błąd: Stan połączenia: %s',
-	errorSoundIO: 'Błąd: nie można pobrać pliku dźwiękowego (Flash IO Error).',
-	errorSocketIO: 'Bład: nie można połączyć się z serwerem (Flash IO Error).',
-	errorSocketSecurity: 'Błąd: Połączenie z serwerem nie powiodło się (Flash Security Error).',
 	errorDOMSyntax: 'Błąd: Nieprawidłowa składnia DOM (DOM ID: %s).'
 
 }

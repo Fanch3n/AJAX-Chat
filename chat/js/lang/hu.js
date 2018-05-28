@@ -83,9 +83,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: 'Hiba: elérted a percenként küldhető maximális üzenet számot.',
 	errorConnectionTimeout: 'Hiba: időtúllépés! Próbáld újra!.',
 	errorConnectionStatus: 'Hiba: a kapcsolat állapota: %s',
-	errorSoundIO: 'Hiba: a hangfájl betöltése sikertelen. (I/O)',
-	errorSocketIO: 'Hiba: kapcsolódás a socket szerverhez sikertelen. (I/O)',
-	errorSocketSecurity: 'Hiba: kapcsolódás a socket szerverhez sikertelen. (Biztonsági hiba!)',
 	errorDOMSyntax: 'Hiba: Hibás DOM szintaxis (DOM ID: %s).'
 	
 }

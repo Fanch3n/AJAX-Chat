@@ -84,9 +84,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: 'Feil: Du overskredet maksimalt antall meldinger per minutt.',
 	errorConnectionTimeout: 'Feil: Oppkoblingstid utgått. Forsøk forsøk igjen.',
 	errorConnectionStatus: 'Feil: Oppkoblingsstatus: %s',
-	errorSoundIO: 'Feil: Kunne ikke laste lydfil (Flash IO Error).',
-	errorSocketIO: 'Feil: Tilkobling til stikkontakt server mislyktes (Flash IO Error).',
-	errorSocketSecurity: 'Feil: Tilkobling til stikkontakt server mislyktes (Flash Security Error).',
 	errorDOMSyntax: 'Feil: Ugyldig DOM Syntaks (DOM ID: %s).'
 
 }

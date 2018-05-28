@@ -84,9 +84,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: 'NApaka: Presegli ste najveÄŤje dovoljeno Ĺˇtevilo sporoÄŤil na minuto!.',
 	errorConnectionTimeout: 'Napaka: ÄŤas povezave se je iztekel. Poskusite znova!',
 	errorConnectionStatus: 'Napaka: Status povezave: %s',
-	errorSoundIO: 'Napaka: ZvoÄŤne datoteke ni bilo mogoÄŤe naloĹľiti (Napaka Flash IO)!',
-	errorSocketIO: 'Napaka: Povezava na server ni uspela (Napaka Flash IO)!',
-	errorSocketSecurity: 'Napaka: Povezava na server ni uspela (Napaka Flash Security)!',
 	errorDOMSyntax: 'Napaka: Nepopolna DOM Syntaxa (DOM ID: %s).'
 	
 }

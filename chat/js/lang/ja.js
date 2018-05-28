@@ -83,9 +83,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: 'エラー : １分あたりに発言できる最大文字数を超えています',
 	errorConnectionTimeout: 'エラー : 接続がタイムアウトしました。再度試してください。',
 	errorConnectionStatus: 'エラー : 接続ステータス : %s',
-	errorSoundIO: 'エラー : サウンドファイルの読み込みに失敗しました (Flash IO Error)',
-	errorSocketIO: 'エラー : ソケットサーバへの接続に失敗しました (Flash IO Error)',
-	errorSocketSecurity: 'エラー : ソケットサーバへの接続に失敗しました (Flash Security Error)',
 	errorDOMSyntax: 'エラー : DOM の文法が不正です (DOM ID: %s)'
 	
 }

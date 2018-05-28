@@ -83,9 +83,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: 'Error: Anda telah melampaui batas pesan maksimum per menitnya.',
 	errorConnectionTimeout: 'Error: Koneksi putus. Mohon dicoba kembali.',
 	errorConnectionStatus: 'Error: Status koneksi: %s',
-	errorSoundIO: 'Error: Gagal mengeluarkan suara (Flash IO Error).',
-	errorSocketIO: 'Error: Gagal mengadakan koneksi ke server (Flash IO Error).',
-	errorSocketSecurity: 'Error: Gagal mengadakan koneksi ke server (Flash Security Error).',
 	errorDOMSyntax: 'Error: Sintaks DOM yang tidak dikenal(DOM ID: %s).'
 	
 }

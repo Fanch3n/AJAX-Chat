@@ -83,9 +83,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: 'Pogreška: Premašili ste najveći dopušteni broj poruka u minuti.',
 	errorConnectionTimeout: 'Pogreška: Neaktivna veza. Pokušajte ponovo.',
 	errorConnectionStatus: 'Pogreška: Stanje veze: %s',
-	errorSoundIO: 'Pogreška: Učitavanje datoteke zvuka nije uspjelo (Flash IO pogreška).',
-	errorSocketIO: 'Pogreška: Povezivanje s priključkom poslužitelja nije uspjelo (Flash IO pogreška).',
-	errorSocketSecurity: 'Pogreška: Povezivanje s priključkom poslužitelja nije uspjelo (Flash sigurnosna pogreška).',
 	errorDOMSyntax: 'Pogreška: Nepravilna DOM sintaksa (DOM ID: %s).'
 	
 }

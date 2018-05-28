@@ -84,9 +84,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: 'Hata: Bir dakika içinde atılabilecek maksimum mesaj sayısına ulaştınız.',
 	errorConnectionTimeout: 'Hata: Bağlantı süresi aşımı. Lütfen tekrar deneyin.',
 	errorConnectionStatus: 'Hata: Bağlantı durumu: %s',
-	errorSoundIO: 'Hata: Ses dosyası yüklenemedi (Flash IO Hatası).',
-	errorSocketIO: 'Hata: Socket server bağlantısı yapılamadı (Flash IO Hatası).',
-	errorSocketSecurity: 'Hata: Socket server bağlantısı yapılamadı(Flash Güvenlik Hatası).',
 	errorDOMSyntax: 'Hata: Geçersiz DOM Sözdizimi (DOM ID: %s).'
 	
 }

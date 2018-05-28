@@ -84,9 +84,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: 'Σφάλμα: Υπερβήκατε τον μέγιστο αριθμό μηνυμάτων ανά λεπτό.',
 	errorConnectionTimeout: 'Σφάλμα: Έληξε ο χρόνος σύνδεσης. Προσπαθήστε ξανά.',
 	errorConnectionStatus: 'Σφάλμα: Κατάσταση σύνδεσης: %s',
-	errorSoundIO: 'Σφάλμα: Απέτυχε η φόρτωση του αρχείου ήχου (Flash IO Σφάλμα).',
-	errorSocketIO: 'Σφάλμα: Η σύνδεση στο socket του διακομιστή απέτυχε (Flash IO Σφάλμα).',
-	errorSocketSecurity: 'Σφάλμα:Η σύνδεση στο socket του διακομιστή απέτυχε (Σφάλμα ασφαλείας του Flash ).',
 	errorDOMSyntax: 'Σφάλμα: Άκυρη DOM σύνταξη (DOM ID: %s).'
 	
 }

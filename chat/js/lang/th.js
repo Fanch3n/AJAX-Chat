@@ -84,9 +84,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: 'Error: ส่งข้อความเกินกำหนดใน 1 นาที',
 	errorConnectionTimeout: 'Error: การเชื่อมต่อหมดเวลา กรุณาลองอีกครั้ง',
 	errorConnectionStatus: 'Error: สถานะการเชื่อมต่อ: %s',
-	errorSoundIO: 'Error: โหลดไฟล์เสียงผิดพลาด (อาจเกิดจาก Flash IO Error, โปรแกรมช่วยดาวน์โหลด).',
-	errorSocketIO: 'Error: การเชื่อมต่อถึง socket เซิร์ฟเวอร์ผิดพลาด (อาจเกิดจาก Flash IO Error).',
-	errorSocketSecurity: 'Error: การเชื่อมต่อถึง socket เซิร์ฟเวอร์ผิดพลาด (Flash Security Error).',
 	errorDOMSyntax: 'Error: DOM Syntax ไม่ถูกต้อง (DOM ID: %s).'
 	
 }

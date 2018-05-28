@@ -83,9 +83,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: 'შეცდომა: თქვენ მიაღწიეთ წუთში მაქსიმალურ შესაძლებელ გზავნილების რიცხვს.',
 	errorConnectionTimeout: 'შეცდომა: კავშირს ვადა გაუვიდა. გთხოვთ, კიდევ სცადეთ.',
 	errorConnectionStatus: 'შეცდომა: კავშირის სტატუსი: %s',
-	errorSoundIO: 'შეცდომა: ხმის ფაილი ვერ ჩაიტვირთა (Flash IO Error).',
-	errorSocketIO: 'შეცდომა: სერვერის სოკეტთან დაკავშირება ჩაიშალა (Flash IO Error).',
-	errorSocketSecurity: 'შეცდომა: სერვერის სოკეტთან დაკავშირება ჩაიშალა (Flash Security Error).',
 	errorDOMSyntax: 'შეცდომა: არასწორი DOM სინტაქსი (DOM ID: %s).'
 	
 }

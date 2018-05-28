@@ -83,9 +83,6 @@ var ajaxChatLang = {
 	errorMaxMessageRate: 'Chyba: Překročil jsi maximální počet zpráv za minutu.',
 	errorConnectionTimeout: 'Chyba: Čas připojení vypršel. Připoj se znovu.',
 	errorConnectionStatus: 'Chyba: Stav připojení: %s',
-	errorSoundIO: 'Chyba: Nepodařilo se přehrát zvukový soubor (Flash IO Error).',
-	errorSocketIO: 'Chyba: Nepodařilo se připojení k serveru (Flash IO Error).',
-	errorSocketSecurity: 'Chyba: Připojení k serveru selhalo (Flash Security Error).',
 	errorDOMSyntax: 'Chyba: Neplatná syntaxe DOM (DOM ID: %s).'
 	
 }
