@@ -2474,6 +2474,8 @@ var ajaxChat = {
 				return ajaxChat.replaceBBCodeCode(p3);
 			case 'u':
 				return ajaxChat.replaceBBCodeUnderline(p3);
+			case 's':
+				return ajaxChat.replaceBBCodeStrikethrough(p3);
 			default:
 				return ajaxChat.replaceCustomBBCode(p1, p2, p3);
 		}
@@ -2567,6 +2569,12 @@ var ajaxChat = {
 
 	replaceBBCodeUnderline: function(content) {
 		return 	'<span style="text-decoration:underline;">'
+				+ this.replaceBBCode(content)
+				+ '</span>';
+	},
+
+	replaceBBCodeStrikethrough: function(content) {
+		return 	'<span style="text-decoration:line-through;">'
 				+ this.replaceBBCode(content)
 				+ '</span>';
 	},
