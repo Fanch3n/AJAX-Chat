@@ -8,7 +8,7 @@
  */
 
 $lang = array();
-$lang['title'] = 'AJAX Chat';
+$lang['title'] = 'Neues Leben';
 $lang['userName'] = 'Benutzername';
 $lang['password'] = 'Passwort';
 $lang['login'] = 'Login';

@@ -117,6 +117,7 @@ var ajaxChatConfig = {
 		'b',
 		'i',
 		'u',
+		's',
 		'quote',
 		'code',
 		'color',
