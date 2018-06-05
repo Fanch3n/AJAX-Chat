@@ -72,7 +72,8 @@
 	background-color:transparent;
 }
 #content .rowEven, #helpList dl:nth-child(even), #settingsList dl:nth-child(even) {
-	background-color:#212121;
+	/*background-color:#212121;*/
+	background-color:#101010;
 }
 #content .rowOdd, #helpList dl:nth-child(odd), #settingsList dl:nth-child(odd) {
 	background-color:#000;
